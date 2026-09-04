@@ -11,8 +11,11 @@ Statische Website von **MilTac** (Fitness-App für Android) — reines HTML/CSS,
 | `style.css` | Design-System |
 | `favicon.svg` | Browser-Icon (Streifen-Logo) |
 | `assets/logo-mark.svg` | Logo-Streifen als Vektor |
-| `assets/og-image.png` | Vorschaubild beim Teilen (WhatsApp, Social Media) |
-| `assets/icon-1024.png`, `icon-512.png` | App-Icon-Vorlagen mit korrekt gesetzten Streifen |
+| `assets/og-image.jpg` | Vorschaubild beim Teilen (WhatsApp, Social Media) |
+| `assets/icon-1024.png` | App-Icon (Play Store), `apple-touch-icon.png` für Home-Bildschirm |
+| `assets/hero-bg.webp`, `about.webp` | Stimmungsfotos Hero / Über |
+| `assets/phone-mockup.webp`, `screen-*.webp` | Handy-Mockup und App-Screenshots |
+| `assets/icon-run/-training/-nutrition.png` | Feature-Icons |
 | `assets/BlackOpsOne-subset.*` | Stencil-Schrift für den Schriftzug, selbst gehostet (SIL OFL, siehe `OFL-BlackOpsOne.txt`) |
 | `CNAME` | Custom Domain für GitHub Pages |
 
@@ -49,4 +52,4 @@ DNS-Änderungen brauchen je nach Anbieter einige Minuten bis wenige Stunden. Git
 
 - [ ] Google-Play-Link in `index.html` eintragen (zwei Stellen, mit `TODO` markiert), sobald die App gelistet ist
 - [ ] USt-IdNr. in `impressum.html` ergänzen, sobald erteilt (auskommentierter Block)
-- [ ] Optional: echte App-Screenshots statt des CSS-Mockups im Hero
+- [ ] Optional: Screenshot der Übersicht im Oliv-Theme nachreichen (aktuell nur in Blau vorhanden, daher nicht eingebaut)

@@ -9,12 +9,13 @@
 <meta property="og:description" content="Lauf-Tracking, funktionelles Training und Ernährung in einer App. Ohne Werbung, ohne Datenverkauf.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://miltac.de/">
-<meta property="og:image" content="https://miltac.de/assets/og-image.png">
+<meta property="og:image" content="https://miltac.de/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0F1210">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="canonical" href="https://miltac.de/">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -28,6 +29,7 @@
     </a>
     <nav class="site-nav" aria-label="Hauptnavigation">
       <a href="#features">Features</a>
+      <a href="#app">App</a>
       <a href="#datenschutz">Datenschutz</a>
       <a href="#ueber">Über</a>
       <a class="btn primary" href="#download">App laden</a>
@@ -38,7 +40,7 @@
 <main id="top">
 
   <!-- ================= HERO ================= -->
-  <section class="hero">
+  <section class="hero has-photo">
     <div class="container">
       <div>
         <p class="eyebrow">Android · Fitness · Made in Germany</p>
@@ -61,27 +63,8 @@
         </div>
       </div>
 
-      <div class="phone-wrap" aria-hidden="true">
-        <div class="phone">
-          <div class="screen">
-            <div class="s-title">Lauf · Aktiv</div>
-            <div class="s-big">5,24<small>km</small></div>
-            <div class="s-row">
-              <div class="s-box"><span>Pace</span><strong>5:12 /km</strong></div>
-              <div class="s-box"><span>Dauer</span><strong>27:14</strong></div>
-              <div class="s-box"><span>Puls</span><strong>148 bpm</strong></div>
-              <div class="s-box"><span>Kalorien</span><strong>412 kcal</strong></div>
-            </div>
-            <div class="s-map">
-              <svg viewBox="0 0 200 160" fill="none">
-                <path d="M20 130 C 40 90, 60 120, 80 80 S 130 40, 150 70 S 180 110, 175 30" stroke="#A3B18A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="20" cy="130" r="6" fill="#0F1210" stroke="#A3B18A" stroke-width="3"/>
-                <circle cx="175" cy="30" r="7" fill="#A3B18A"/>
-              </svg>
-            </div>
-            <div class="s-btn">LAUF BEENDEN</div>
-          </div>
-        </div>
+      <div class="phone-wrap">
+        <img class="phone-img" src="assets/phone-mockup.webp" width="593" height="1127" alt="MilTac auf einem Android-Smartphone: Übersicht mit Wochen-Mission, Statistiken und Missions-Fortschritt" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -95,17 +78,17 @@
 
       <div class="grid cols-3" style="margin-top:44px">
         <article class="card reveal">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"/><path d="m5 20 4-8 3 3v6M9 12l3-4 3 2 4-2M8 15l-4 1"/></svg></div>
+          <div class="icon"><img src="assets/icon-run.png" width="44" height="44" alt=""></div>
           <h3>Lauf-Tracking</h3>
           <p>GPS-Aufzeichnung deiner Läufe mit Route auf der Karte, Distanz, Dauer und Pace. Herzfrequenz und Kalorien optional aus Health Connect.</p>
         </article>
         <article class="card reveal">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12"/></svg></div>
+          <div class="icon"><img src="assets/icon-training.png" width="44" height="44" alt=""></div>
           <h3>Funktionelles Training</h3>
           <p>Strukturierte Trainingseinheiten für Kraft und Ausdauer. Erstelle eigene Einheiten mit Fotos — die bleiben ausschließlich auf deinem Gerät.</p>
         </article>
         <article class="card reveal">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-4 4-7 6-7 11a7 7 0 0 0 14 0c0-5-3-7-7-11z"/><path d="M12 14v7"/></svg></div>
+          <div class="icon"><img src="assets/icon-nutrition.png" width="44" height="44" alt=""></div>
           <h3>Ernährung</h3>
           <p>Protokolliere deine Mahlzeiten, setze Ernährungsziele und behalte den Überblick — passend zu deinem Fitness-Level und deinem Ziel.</p>
         </article>
@@ -113,8 +96,34 @@
     </div>
   </section>
 
+  <!-- ================= SCREENSHOTS ================= -->
+  <section class="section alt" id="app">
+    <div class="container split">
+      <div>
+        <p class="eyebrow reveal">Ein Blick in die App</p>
+        <h2 class="reveal">Klar. Dunkel. Auf den Punkt.</h2>
+        <p class="lead reveal">Kein Feed, keine Ablenkung. Fünf Bereiche — Übersicht, Lauf, Training, Ernährung, Konto — und jede Zahl, die zählt, auf einen Blick.</p>
+        <ul class="checklist reveal">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Wochen-Mission &amp; Level-System</strong><span>Vom Rekruten aufwärts: Jede Einheit bringt XP, jede Woche ein Ziel.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Fertige Einheiten nach Kategorie</strong><span>Laufen, Kraft, Kondition, Mobilität, Erholung — mit Dauer und Schwierigkeitsgrad.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Makros im Blick</strong><span>Kalorien, Protein, Kohlenhydrate und Fett pro Mahlzeit und für den ganzen Tag.</span></div></li>
+        </ul>
+      </div>
+      <div class="screens reveal">
+        <figure class="screen-frame">
+          <img src="assets/screen-training.webp" width="720" height="1600" loading="lazy" alt="MilTac Training: Liste der Einheiten mit Kategorie, Schwierigkeit und Dauer">
+          <figcaption>Training</figcaption>
+        </figure>
+        <figure class="screen-frame">
+          <img src="assets/screen-ernaehrung.webp" width="720" height="1600" loading="lazy" alt="MilTac Ernährung: Tagesübersicht mit Kalorien und Makronährstoffen">
+          <figcaption>Ernährung</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= DATENSCHUTZ ================= -->
-  <section class="section alt" id="datenschutz">
+  <section class="section" id="datenschutz">
     <div class="container split">
       <div>
         <p class="eyebrow reveal">Datenschutz</p>
@@ -146,17 +155,19 @@
   </section>
 
   <!-- ================= ÜBER ================= -->
-  <section class="section" id="ueber">
+  <section class="section alt" id="ueber">
     <div class="container split">
-      <div class="panel reveal">
-        <p class="eyebrow">MilTac</p>
-        <dl class="kv">
-          <dt>Inhaber</dt><dd>Marco Huwer</dd>
-          <dt>Sitz</dt><dd>Germering bei München</dd>
-          <dt>Produkt</dt><dd>MilTac — Fitness-App für Android</dd>
-          <dt>Modell</dt><dd>Einmaliger Kauf über Google Play</dd>
-          <dt>Kontakt</dt><dd><a href="mailto:info@miltac.de">info@miltac.de</a></dd>
-        </dl>
+      <div class="about-visual reveal">
+        <img src="assets/about.webp" width="1400" height="933" loading="lazy" alt="Laufschuhe, Sportuhr, Trinkflasche und Notizbuch auf dunklem Untergrund">
+        <div class="panel">
+          <p class="eyebrow">MilTac</p>
+          <dl class="kv">
+            <dt>Inhaber</dt><dd>Marco Huwer</dd>
+            <dt>Sitz</dt><dd>Germering bei München</dd>
+            <dt>Produkt</dt><dd>Fitness-App für Android</dd>
+            <dt>Modell</dt><dd>Einmaliger Kauf</dd>
+          </dl>
+        </div>
       </div>
       <div>
         <p class="eyebrow reveal">Über MilTac</p>

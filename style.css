@@ -149,6 +149,8 @@ p { margin: 0 0 1em; }
   color: var(--accent);
 }
 .card .icon svg { width: 24px; height: 24px; }
+.card .icon img { width: 60px; height: 60px; }
+.card .icon:has(img) { width: 68px; height: 68px; border-radius: 16px; }
 
 /* --------------------------------------------------------------------------
    Hero
@@ -158,9 +160,22 @@ p { margin: 0 0 1em; }
   overflow: hidden;
   padding: 96px 20px 72px;
 }
+.hero.has-photo {
+  background: url("assets/hero-bg.webp") center 40% / cover no-repeat, var(--bg);
+}
+.hero.has-photo::after {
+  /* Foto abdunkeln, damit Text lesbar bleibt; unten weich in den Seitenhintergrund */
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(15, 18, 16, 0.92) 0%, rgba(15, 18, 16, 0.75) 45%, rgba(15, 18, 16, 0.35) 100%),
+    linear-gradient(180deg, rgba(15, 18, 16, 0.55) 0%, rgba(15, 18, 16, 0.1) 40%, var(--bg) 100%);
+  pointer-events: none;
+}
 .hero::before {
   /* dezentes taktisches Raster im Hintergrund */
   content: "";
+  z-index: 1;
   position: absolute; inset: 0;
   background-image:
     linear-gradient(var(--border) 1px, transparent 1px),
@@ -173,6 +188,7 @@ p { margin: 0 0 1em; }
 }
 .hero .container {
   position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 48px;
@@ -201,6 +217,7 @@ p { margin: 0 0 1em; }
    Phone-Mockup (reines CSS, ersetzt bis zum Screenshot die App-Ansicht)
    -------------------------------------------------------------------------- */
 .phone-wrap { display: grid; place-items: center; }
+.phone-img { width: min(100%, 420px); height: auto; filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6)); }
 .phone {
   width: 280px;
   aspect-ratio: 9 / 19;
@@ -246,6 +263,38 @@ p { margin: 0 0 1em; }
 }
 .screen .s-map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .screen .s-btn { background: var(--accent); color: #0F1210; text-align: center; border-radius: 999px; padding: 11px; font-weight: 700; font-size: 0.8rem; letter-spacing: .04em; }
+
+/* --------------------------------------------------------------------------
+   App-Screenshots
+   -------------------------------------------------------------------------- */
+.screens { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.screens .screen-frame:nth-child(2) { margin-top: 56px; }
+.screen-frame {
+  margin: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: #000;
+  box-shadow: 0 0 0 5px #151A15, 0 30px 60px rgba(0, 0, 0, 0.55);
+}
+.screen-frame img { width: 100%; height: auto; display: block; }
+.screen-frame figcaption {
+  font: 600 0.7rem/1 var(--mono); letter-spacing: .2em; text-transform: uppercase;
+  color: var(--accent); text-align: center; padding: 12px 0 14px; background: var(--card);
+}
+
+/* --------------------------------------------------------------------------
+   Über: Flat-Lay mit Fakten-Panel
+   -------------------------------------------------------------------------- */
+.about-visual { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+.about-visual img { width: 100%; height: 100%; object-fit: cover; object-position: 15% center; display: block; min-height: 420px; }
+.about-visual .panel {
+  position: absolute; right: 20px; bottom: 20px; left: auto;
+  width: min(300px, calc(100% - 40px));
+  padding: 22px 24px;
+  background: rgba(23, 29, 22, 0.88);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
 
 /* --------------------------------------------------------------------------
    Feature-Liste (Checkliste)
@@ -341,6 +390,10 @@ p { margin: 0 0 1em; }
   .hero .container { grid-template-columns: 1fr; gap: 40px; }
   .hero { padding-top: 64px; }
   .phone { width: 250px; }
+  .phone-img { width: min(100%, 320px); }
+  .screens .screen-frame:nth-child(2) { margin-top: 32px; }
+  .about-visual img { min-height: 0; height: 240px; }
+  .about-visual .panel { position: static; width: auto; border-radius: 0; border: 0; border-top: 1px solid var(--border); background: var(--card); }
   .screen .s-box { padding: 9px 10px; }
   .screen .s-box strong { font-size: 0.85rem; }
   .grid.cols-3 { grid-template-columns: 1fr; }
