@@ -267,8 +267,12 @@ p { margin: 0 0 1em; }
 /* --------------------------------------------------------------------------
    App-Screenshots
    -------------------------------------------------------------------------- */
-.screens { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
-.screens .screen-frame:nth-child(2) { margin-top: 56px; }
+.screens { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; margin-top: 48px; max-width: 900px; }
+.screens .screen-frame:nth-child(2) { margin-top: -28px; }
+.screen-notes { margin-top: 44px; max-width: 900px; }
+.screen-notes div { border-top: 2px solid var(--accent); padding-top: 14px; }
+.screen-notes strong { display: block; margin-bottom: 4px; }
+.screen-notes span { color: var(--muted); font-size: 0.95rem; }
 .screen-frame {
   margin: 0;
   border-radius: 26px;
@@ -391,7 +395,14 @@ p { margin: 0 0 1em; }
   .hero { padding-top: 64px; }
   .phone { width: 250px; }
   .phone-img { width: min(100%, 320px); }
-  .screens .screen-frame:nth-child(2) { margin-top: 32px; }
+  .screens {
+    display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 8px 4px 20px; margin-top: 32px; max-width: none;
+    scrollbar-width: none;
+  }
+  .screens::-webkit-scrollbar { display: none; }
+  .screens .screen-frame { flex: 0 0 74%; scroll-snap-align: center; }
+  .screens .screen-frame:nth-child(2) { margin-top: 0; }
   .about-visual img { min-height: 0; height: 240px; }
   .about-visual .panel { position: static; width: auto; border-radius: 0; border: 0; border-top: 1px solid var(--border); background: var(--card); }
   .screen .s-box { padding: 9px 10px; }

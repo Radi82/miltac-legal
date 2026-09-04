@@ -52,4 +52,10 @@ DNS-Änderungen brauchen je nach Anbieter einige Minuten bis wenige Stunden. Git
 
 - [ ] Google-Play-Link in `index.html` eintragen (zwei Stellen, mit `TODO` markiert), sobald die App gelistet ist
 - [ ] USt-IdNr. in `impressum.html` ergänzen, sobald erteilt (auskommentierter Block)
-- [ ] Optional: Screenshot der Übersicht im Oliv-Theme nachreichen (aktuell nur in Blau vorhanden, daher nicht eingebaut)
+
+## Marken-Kurzreferenz
+
+- **Farben:** Hintergrund `#0F1210`, Karten `#171D16`, Text `#E6E8E1`, gedämpft `#8A8F84`, Akzent Oliv `#A3B18A` (Streifen: `#8E9F70` / `#99A97F` / `#A3B18A`)
+- **Logo:** drei waagerechte Streifen, rechte Kante bündig, linke Kante schräg (oben längster Streifen) — Vektor in `assets/logo-mark.svg`
+- **Schriftzug:** „MILTAC" in *Black Ops One* (selbst gehostet, OFL) · Fließtext Systemschrift · Labels Monospace, Versalien, weite Laufweite
+- **Kontakt:** info@miltac.de · Inhaber Marco Huwer, Erikastraße 18, 82110 Germering
