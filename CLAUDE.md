@@ -9,8 +9,8 @@
 - **Vor jeder größeren Aufgabe: erst überlegen welches Modell + welche
   Effort-Stufe nötig ist, dann dem User Bescheid geben — nicht einfach
   anfangen.** Der User stellt danach selbst um und gibt explizit **"GO"**.
-  Erst danach coden. Gilt projektübergreifend, auch fürs Schwester-Repo
-  `miltac-training-flutter` (die Flutter-App zu dieser Website).
+  Erst danach coden. Gilt projektübergreifend, auch für andere Projekte
+  des Users.
 - Deutsch mit dem User, Commit-Messages/Code auf Englisch ist hier nicht
   vorgeschrieben (reine HTML/CSS-Site, keine Codebase-Konvention nötig).
 - Nie direkt auf `main` — Branch → PR → merge lassen der User entscheidet
@@ -24,21 +24,19 @@
 - Inhaber: **Marco Huwer**, Einzelunternehmen **MilTac**, Erikastraße 18,
   82110 Germering. Kontakt **info@miltac.de** (nie die private @pm.me-Adresse
   in öffentlichen Seiten verwenden).
-- Website ist der Web-Auftritt zur Android-Fitness-App **MilTac** (separates,
-  privates Repo `Radi82/miltac-training-flutter`). `konto-loeschen.html` hier
-  ist die von Google Play geforderte Web-URL für die Kontolöschung — das
-  Pendant in der App selbst liegt im Flutter-Repo.
+- Website ist der Web-Auftritt zur Android-Fitness-App **MilTac** (separates
+  privates Repo). `konto-loeschen.html` hier ist die von Google Play
+  geforderte Web-URL für die Kontolöschung — das Pendant in der App selbst
+  liegt im App-Repo.
 - Gehostet auf GitHub Pages mit Custom Domain `miltac.de` (Porkbun-DNS),
   HTTPS aktiv, Domain verifiziert.
-- Supabase-Backend der App (Projekt `clhjflkdvqqopyhwfxrf`) ist
-  sicherheitsgehärtet; Details dazu leben im Flutter-Repo, nicht hier.
 
 ## Sandbox-Hinweis für Cloud-Sessions
 
 Diese Website braucht kein Android SDK und keinen Emulator — reines
 HTML/CSS/JS, Playwright reicht zum visuellen Prüfen (auch headless in einer
-Cloud-Session). Für Arbeit an der Flutter-App (`miltac-training-flutter`)
-ist dagegen eine **lokale** Session besser: dort gibt es kein Android SDK,
+Cloud-Session). Für Arbeit an der zugehörigen Android-App ist dagegen eine
+**lokale** Session besser: in einer Cloud-Session gibt es kein Android SDK,
 kein Display für einen sichtbaren Emulator, und der Internet-Egress ist auf
 eine Allowlist beschränkt (kein `dl.google.com` u.ä.) — App-Builds laufen
 dort nur über einen Umweg via GitHub Actions.
