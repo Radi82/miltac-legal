@@ -8,6 +8,7 @@ Statische Website von **MilTac** (Fitness-App für Android) — reines HTML/CSS,
 | `impressum.html` | Impressum (§ 5 DDG) |
 | `datenschutz.html` | Datenschutzerklärung (App + Website) |
 | `agb.html` | Nutzungsbedingungen der App |
+| `konto-loeschen.html` | Anleitung zur Kontolöschung (Pflicht-URL für die Google Play Console) |
 | `style.css` | Design-System |
 | `site.js` | Einziges Skript (Einblend-Animation), lokal, keine Abhängigkeiten |
 | `favicon.svg` | Browser-Icon (Streifen-Logo) |
@@ -53,6 +54,8 @@ DNS-Änderungen brauchen je nach Anbieter einige Minuten bis wenige Stunden. Git
 
 - [ ] Google-Play-Link in `index.html` eintragen (zwei Stellen, mit `TODO` markiert), sobald die App gelistet ist
 - [ ] USt-IdNr. in `impressum.html` ergänzen, sobald erteilt (auskommentierter Block)
+- [ ] URL `https://miltac.de/konto-loeschen.html` in der Play Console unter *App-Inhalte → Datensicherheit → Kontolöschung* eintragen
+- [ ] Kontolöschung direkt in der App anbieten (Google-Play-Vorgabe); bis dahin läuft sie per E-Mail
 
 ## Sicherheit
 
