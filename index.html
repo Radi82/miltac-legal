@@ -3,19 +3,208 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MilTac — Rechtliches</title>
+<title>MilTac — Lauf-Tracking, Training &amp; Ernährung für Android</title>
+<meta name="description" content="MilTac ist die Fitness-App für Android: GPS-Lauf-Tracking, funktionelles Training und Ernährungs-Protokoll. Ohne Werbung, ohne Tracking, ohne Datenverkauf.">
+<meta property="og:title" content="MilTac — Dein taktischer Fitness-Begleiter">
+<meta property="og:description" content="Lauf-Tracking, funktionelles Training und Ernährung in einer App. Ohne Werbung, ohne Datenverkauf.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://miltac.de/">
+<meta name="theme-color" content="#0F1210">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://miltac.de/">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <p class="brand">MilTac</p>
-  <h1>Rechtliches</h1>
-  <p>Offizielle Rechtsdokumente der Android-App <strong>MilTac</strong> (Fitness: Lauf-Tracking, Training, Ernährung).</p>
-  <ul>
-    <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
-    <li><a href="agb.html">Nutzungsbedingungen (AGB)</a></li>
-  </ul>
-  <footer>© 2026 Marco Huwer · Kontakt: <a href="mailto:miltac.support@pm.me">miltac.support@pm.me</a></footer>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="#top" aria-label="MilTac Startseite">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="17" fill="none" stroke="currentColor" stroke-width="4" style="color:#A3B18A"/><circle cx="32" cy="32" r="5" fill="#A3B18A"/><path d="M32 6v11M32 47v11M6 32h11M47 32h11" stroke="#A3B18A" stroke-width="4" stroke-linecap="round"/></svg>
+      MilTac
+    </a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="#features">Features</a>
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#ueber">Über</a>
+      <a class="btn primary" href="#download">App laden</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <p class="eyebrow">Android · Fitness · Made in Germany</p>
+        <h1>Dein taktischer<br><em>Fitness-Begleiter.</em></h1>
+        <p class="lead">Lauf-Tracking, funktionelles Training und Ernährungs-Protokoll — in einer App. Ohne Werbung, ohne Tracking, ohne Datenverkauf.</p>
+        <div class="actions">
+          <!-- TODO: Google-Play-Link eintragen, sobald die App gelistet ist -->
+          <a class="btn primary" href="#download">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3 13 12l-9.4 9.7c-.4-.2-.6-.6-.6-1.2V3.5c0-.6.2-1 .6-1.2zm1.5-.1L15.6 9.5l-2.3 2.4zm0 19.6 8.2-9.2 2.3 2.4zm11.6-6.1-2.6-2.7 2.6-2.7 3.5 2c1 .6 1 1.5 0 2.1z"/></svg>
+            Bei Google Play laden
+          </a>
+          <a class="btn" href="#features">Was MilTac kann</a>
+        </div>
+        <p class="note">Einmaliger Kauf. Keine Abos, keine In-App-Käufe.</p>
+
+        <div class="stats">
+          <div><strong>GPS</strong><span>Lauf-Tracking mit Route</span></div>
+          <div><strong>0</strong><span>Werbe-Tracker</span></div>
+          <div><strong>100 %</strong><span>Deine Daten gehören dir</span></div>
+        </div>
+      </div>
+
+      <div class="phone-wrap" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <div class="s-title">Lauf · Aktiv</div>
+            <div class="s-big">5,24<small>km</small></div>
+            <div class="s-row">
+              <div class="s-box"><span>Pace</span><strong>5:12 /km</strong></div>
+              <div class="s-box"><span>Dauer</span><strong>27:14</strong></div>
+              <div class="s-box"><span>Puls</span><strong>148 bpm</strong></div>
+              <div class="s-box"><span>Kalorien</span><strong>412 kcal</strong></div>
+            </div>
+            <div class="s-map">
+              <svg viewBox="0 0 200 160" fill="none">
+                <path d="M20 130 C 40 90, 60 120, 80 80 S 130 40, 150 70 S 180 110, 175 30" stroke="#A3B18A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="130" r="6" fill="#0F1210" stroke="#A3B18A" stroke-width="3"/>
+                <circle cx="175" cy="30" r="7" fill="#A3B18A"/>
+              </svg>
+            </div>
+            <div class="s-btn">LAUF BEENDEN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <div class="container">
+      <p class="eyebrow reveal">Funktionen</p>
+      <h2 class="reveal">Drei Disziplinen. Eine App.</h2>
+      <p class="lead reveal">MilTac bündelt alles, was du für dein Training brauchst — ohne Schnickschnack und ohne dich abzulenken.</p>
+
+      <div class="grid cols-3" style="margin-top:44px">
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"/><path d="m5 20 4-8 3 3v6M9 12l3-4 3 2 4-2M8 15l-4 1"/></svg></div>
+          <h3>Lauf-Tracking</h3>
+          <p>GPS-Aufzeichnung deiner Läufe mit Route auf der Karte, Distanz, Dauer und Pace. Herzfrequenz und Kalorien optional aus Health Connect.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12"/></svg></div>
+          <h3>Funktionelles Training</h3>
+          <p>Strukturierte Trainingseinheiten für Kraft und Ausdauer. Erstelle eigene Einheiten mit Fotos — die bleiben ausschließlich auf deinem Gerät.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-4 4-7 6-7 11a7 7 0 0 0 14 0c0-5-3-7-7-11z"/><path d="M12 14v7"/></svg></div>
+          <h3>Ernährung</h3>
+          <p>Protokolliere deine Mahlzeiten, setze Ernährungsziele und behalte den Überblick — passend zu deinem Fitness-Level und deinem Ziel.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DATENSCHUTZ ================= -->
+  <section class="section alt" id="datenschutz">
+    <div class="container split">
+      <div>
+        <p class="eyebrow reveal">Datenschutz</p>
+        <h2 class="reveal">Keine Werbung.<br>Kein Tracking.<br>Kein Datenverkauf.</h2>
+        <p class="lead reveal">Fitness-Daten sind persönlich. Deshalb ist MilTac so gebaut, dass so wenig wie möglich dein Gerät verlässt.</p>
+        <ul class="checklist reveal">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Standort nur während des Laufs</strong><span>GPS wird ausschließlich erfasst, solange du aktiv aufzeichnest.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Gesundheitsdaten nur mit Einwilligung</strong><span>Health Connect wird nur gelesen, wenn du es ausdrücklich erlaubst — jederzeit widerrufbar.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Eigene Fotos bleiben lokal</strong><span>Bilder deiner Trainingseinheiten werden niemals hochgeladen.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Konto jederzeit löschbar</strong><span>Eine kurze Anfrage genügt — samt aller zugehörigen Daten.</span></div></li>
+        </ul>
+        <p style="margin-top:28px"><a href="datenschutz.html">Vollständige Datenschutzerklärung lesen →</a></p>
+      </div>
+
+      <div class="panel reveal">
+        <p class="eyebrow">Auf einen Blick</p>
+        <dl class="kv">
+          <dt>Werbe-IDs</dt><dd>Keine</dd>
+          <dt>Werbung</dt><dd>Keine</dd>
+          <dt>Datenverkauf</dt><dd>Nie</dd>
+          <dt>Standort</dt><dd>Nur während aktiver Aufzeichnung</dd>
+          <dt>Health Connect</dt><dd>Nur mit Einwilligung</dd>
+          <dt>Fotos</dt><dd>Nur lokal auf dem Gerät</dd>
+          <dt>Absturzberichte</dt><dd>Anonym, optional</dd>
+          <dt>Recht</dt><dd>DSGVO, deutsches Recht</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ÜBER ================= -->
+  <section class="section" id="ueber">
+    <div class="container split">
+      <div class="panel reveal">
+        <p class="eyebrow">MilTac</p>
+        <dl class="kv">
+          <dt>Inhaber</dt><dd>Marco Huwer</dd>
+          <dt>Sitz</dt><dd>Germering bei München</dd>
+          <dt>Produkt</dt><dd>MilTac — Fitness-App für Android</dd>
+          <dt>Modell</dt><dd>Einmaliger Kauf über Google Play</dd>
+          <dt>Kontakt</dt><dd><a href="mailto:miltac.support@pm.me">miltac.support@pm.me</a></dd>
+        </dl>
+      </div>
+      <div>
+        <p class="eyebrow reveal">Über MilTac</p>
+        <h2 class="reveal">Entwickelt in Germering. Ohne Investoren, ohne Werbedeals.</h2>
+        <p class="lead reveal">MilTac ist ein unabhängiges Ein-Personen-Unternehmen aus Bayern. Die App entsteht aus der eigenen Praxis — für Menschen, die Laufen, Training und Ernährung diszipliniert im Griff haben wollen, ohne dafür ihre Daten zu verkaufen.</p>
+        <p class="reveal" style="color:var(--muted)">Ein einmaliger Kaufpreis statt Abo bedeutet: Du bist der Kunde, nicht das Produkt. Fragen, Ideen oder Fehler gefunden? Schreib mir direkt.</p>
+        <p class="reveal"><a class="btn" href="mailto:miltac.support@pm.me">Kontakt aufnehmen</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta" id="download">
+    <div class="container">
+      <p class="eyebrow">Jetzt starten</p>
+      <h2>Bereit für dein nächstes Training?</h2>
+      <p class="lead" style="margin:0 auto">MilTac für Android — einmal kaufen, dauerhaft nutzen.</p>
+      <div class="actions">
+        <!-- TODO: Google-Play-Link eintragen, sobald die App gelistet ist -->
+        <a class="btn primary" href="#download">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3 13 12l-9.4 9.7c-.4-.2-.6-.6-.6-1.2V3.5c0-.6.2-1 .6-1.2zm1.5-.1L15.6 9.5l-2.3 2.4zm0 19.6 8.2-9.2 2.3 2.4zm11.6-6.1-2.6-2.7 2.6-2.7 3.5 2c1 .6 1 1.5 0 2.1z"/></svg>
+          Bei Google Play laden
+        </a>
+      </div>
+      <p class="note" style="color:var(--muted);font-size:.85rem;margin-top:18px">Google Play und das Google-Play-Logo sind Marken von Google LLC.</p>
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div>© 2026 MilTac · Marco Huwer · Germering</div>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+      <a href="mailto:miltac.support@pm.me">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Sanfte Einblendung beim Scrollen — ohne JS sind alle Elemente sichtbar (siehe CSS)
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
 </body>
 </html>
