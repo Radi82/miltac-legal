@@ -37,6 +37,14 @@ a:hover { color: var(--accent-strong); }
 h1, h2, h3 { line-height: 1.15; margin: 0 0 0.5em; }
 p { margin: 0 0 1em; }
 
+/* Kleine Hilfsklassen (ersetzen Inline-Styles, damit die CSP strikt bleiben kann) */
+.mt-18 { margin-top: 18px; }
+.mt-28 { margin-top: 28px; }
+.mt-44 { margin-top: 44px; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.centered { margin-left: auto; margin-right: auto; }
+
 /* Kleines Label in Monospace — der "taktische" Akzent */
 .eyebrow {
   font: 600 0.75rem/1 var(--mono);

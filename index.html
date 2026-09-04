@@ -17,8 +17,10 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="canonical" href="https://miltac.de/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="style.css">
-<script>document.documentElement.classList.add("js");</script>
+<script src="site.js"></script>
 </head>
 <body>
 
@@ -77,7 +79,7 @@
       <h2 class="reveal">Drei Disziplinen. Eine App.</h2>
       <p class="lead reveal">MilTac bündelt alles, was du für dein Training brauchst — ohne Schnickschnack und ohne dich abzulenken.</p>
 
-      <div class="grid cols-3" style="margin-top:44px">
+      <div class="grid cols-3 mt-44">
         <article class="card reveal">
           <div class="icon"><img src="assets/icon-run.png" width="44" height="44" alt=""></div>
           <h3>Lauf-Tracking</h3>
@@ -140,7 +142,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Eigene Fotos bleiben lokal</strong><span>Bilder deiner Trainingseinheiten werden niemals hochgeladen.</span></div></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Konto jederzeit löschbar</strong><span>Eine kurze Anfrage genügt — samt aller zugehörigen Daten.</span></div></li>
         </ul>
-        <p style="margin-top:28px"><a href="datenschutz.html">Vollständige Datenschutzerklärung lesen →</a></p>
+        <p class="mt-28"><a href="datenschutz.html">Vollständige Datenschutzerklärung lesen →</a></p>
       </div>
 
       <div class="panel reveal">
@@ -178,7 +180,7 @@
         <p class="eyebrow reveal">Über MilTac</p>
         <h2 class="reveal">Entwickelt in Germering. Ohne Investoren, ohne Werbedeals.</h2>
         <p class="lead reveal">MilTac ist ein unabhängiges Ein-Personen-Unternehmen aus Bayern. Die App entsteht aus der eigenen Praxis — für Menschen, die Laufen, Training und Ernährung diszipliniert im Griff haben wollen, ohne dafür ihre Daten zu verkaufen.</p>
-        <p class="reveal" style="color:var(--muted)">Ein einmaliger Kaufpreis statt Abo bedeutet: Du bist der Kunde, nicht das Produkt. Fragen, Ideen oder Fehler gefunden? Schreib mir direkt.</p>
+        <p class="reveal muted">Ein einmaliger Kaufpreis statt Abo bedeutet: Du bist der Kunde, nicht das Produkt. Fragen, Ideen oder Fehler gefunden? Schreib mir direkt.</p>
         <p class="reveal"><a class="btn" href="mailto:info@miltac.de">Kontakt aufnehmen</a></p>
       </div>
     </div>
@@ -189,7 +191,7 @@
     <div class="container">
       <p class="eyebrow">Jetzt starten</p>
       <h2>Bereit für dein nächstes Training?</h2>
-      <p class="lead" style="margin:0 auto">MilTac für Android — einmal kaufen, dauerhaft nutzen.</p>
+      <p class="lead centered">MilTac für Android — einmal kaufen, dauerhaft nutzen.</p>
       <div class="actions">
         <!-- TODO: Google-Play-Link eintragen, sobald die App gelistet ist -->
         <a class="btn primary" href="#download">
@@ -197,7 +199,7 @@
           Bei Google Play laden
         </a>
       </div>
-      <p class="note" style="color:var(--muted);font-size:.85rem;margin-top:18px">Google Play und das Google-Play-Logo sind Marken von Google LLC.</p>
+      <p class="note muted small mt-18">Google Play und das Google-Play-Logo sind Marken von Google LLC.</p>
     </div>
   </section>
 
@@ -215,16 +217,5 @@
   </div>
 </footer>
 
-<script>
-  // Sanfte Einblendung beim Scrollen — ohne JS sind alle Elemente sichtbar (siehe CSS)
-  (function () {
-    var els = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, { threshold: 0.12 });
-    els.forEach(function (e) { io.observe(e); });
-  })();
-</script>
 </body>
 </html>

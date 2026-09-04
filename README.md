@@ -9,6 +9,7 @@ Statische Website von **MilTac** (Fitness-App für Android) — reines HTML/CSS,
 | `datenschutz.html` | Datenschutzerklärung (App + Website) |
 | `agb.html` | Nutzungsbedingungen der App |
 | `style.css` | Design-System |
+| `site.js` | Einziges Skript (Einblend-Animation), lokal, keine Abhängigkeiten |
 | `favicon.svg` | Browser-Icon (Streifen-Logo) |
 | `assets/logo-mark.svg` | Logo-Streifen als Vektor |
 | `assets/og-image.jpg` | Vorschaubild beim Teilen (WhatsApp, Social Media) |
@@ -52,6 +53,13 @@ DNS-Änderungen brauchen je nach Anbieter einige Minuten bis wenige Stunden. Git
 
 - [ ] Google-Play-Link in `index.html` eintragen (zwei Stellen, mit `TODO` markiert), sobald die App gelistet ist
 - [ ] USt-IdNr. in `impressum.html` ergänzen, sobald erteilt (auskommentierter Block)
+
+## Sicherheit
+
+- **Content-Security-Policy** per `<meta>` auf jeder Seite: nur eigene Skripte, Styles, Bilder und Schriften; keine Inline-Skripte oder -Styles, keine Verbindungen nach außen, keine Formulare, keine Einbettung fremder Inhalte. Neue Inline-`style="…"` oder `<script>`-Blöcke würden dadurch blockiert — stattdessen `style.css` bzw. `site.js` erweitern.
+- **Referrer-Policy** `strict-origin-when-cross-origin`.
+- GitHub Pages erlaubt keine eigenen HTTP-Header; HSTS und `frame-ancestors` sind deshalb nicht setzbar. „Enforce HTTPS" ist aktiv.
+- **Domain-Schutz:** Die Domain sollte im GitHub-Konto unter *Settings → Pages → Verified domains* bestätigt sein (TXT-Record bei Porkbun). Das verhindert, dass ein fremdes Repo die Domain übernehmen kann, falls dieses Repo einmal gelöscht oder umbenannt wird.
 
 ## Marken-Kurzreferenz
 
