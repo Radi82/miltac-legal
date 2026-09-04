@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#0F1210"/>
-  <!-- Fadenkreuz / Zielmarke -->
-  <circle cx="32" cy="32" r="17" fill="none" stroke="#A3B18A" stroke-width="4"/>
-  <circle cx="32" cy="32" r="5" fill="#A3B18A"/>
-  <path d="M32 6v11M32 47v11M6 32h11M47 32h11" stroke="#A3B18A" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(9 14) scale(0.324)">
+    <polygon points="0,0 142,0 142,22 15,22" fill="#8E9F70"/>
+    <polygon points="28,34 142,34 142,56 43,56" fill="#99A97F"/>
+    <polygon points="57,68 142,68 142,88 72,88" fill="#A3B18A"/>
+  </g>
 </svg>

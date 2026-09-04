@@ -9,7 +9,11 @@ Statische Website von **MilTac** (Fitness-App für Android) — reines HTML/CSS,
 | `datenschutz.html` | Datenschutzerklärung (App + Website) |
 | `agb.html` | Nutzungsbedingungen der App |
 | `style.css` | Design-System |
-| `favicon.svg` | Icon |
+| `favicon.svg` | Browser-Icon (Streifen-Logo) |
+| `assets/logo-mark.svg` | Logo-Streifen als Vektor |
+| `assets/og-image.png` | Vorschaubild beim Teilen (WhatsApp, Social Media) |
+| `assets/icon-1024.png`, `icon-512.png` | App-Icon-Vorlagen mit korrekt gesetzten Streifen |
+| `assets/BlackOpsOne-subset.*` | Stencil-Schrift für den Schriftzug, selbst gehostet (SIL OFL, siehe `OFL-BlackOpsOne.txt`) |
 | `CNAME` | Custom Domain für GitHub Pages |
 
 ## Veröffentlichen mit GitHub Pages

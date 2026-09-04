@@ -67,18 +67,25 @@ p { margin: 0 0 1em; }
   justify-content: space-between;
   gap: 16px;
 }
+@font-face {
+  /* Black Ops One (SIL OFL 1.1) — selbst gehostet, kein Google-Fonts-Abruf */
+  font-family: "Black Ops One";
+  src: url("assets/BlackOpsOne-subset.woff2") format("woff2"),
+       url("assets/BlackOpsOne-subset.ttf") format("truetype");
+  font-display: swap;
+}
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: var(--text);
+  gap: 12px;
+  color: #E7ECDF;
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.28em;
+  font: 400 1.35rem/1 "Black Ops One", Impact, "Arial Black", sans-serif;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 0.9rem;
 }
-.logo svg { width: 26px; height: 26px; }
+.logo:hover { color: #fff; }
+.logo .mark { width: 42px; height: auto; flex: none; }
 .site-nav { display: flex; gap: 22px; align-items: center; }
 .site-nav a {
   color: var(--muted);
