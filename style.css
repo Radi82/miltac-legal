@@ -267,7 +267,6 @@ p { margin: 0 0 1em; }
    -------------------------------------------------------------------------- */
 .phone-wrap { display: grid; place-items: center; }
 .phone-img { width: min(100%, 420px); height: auto; filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6)); }
-.hero-shot { width: min(100%, 330px); }
 .designs {
   margin: 56px 0 0;
   border-radius: var(--radius);
@@ -458,7 +457,6 @@ p { margin: 0 0 1em; }
   .hero { padding-top: 64px; }
   .phone { width: 250px; }
   .phone-img { width: min(100%, 320px); }
-  .hero-shot { width: min(100%, 260px); }
   .screens {
     display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
     padding: 8px 4px 20px; margin-top: 32px; max-width: none;
