@@ -1,6 +1,6 @@
 /* ==========================================================================
    MilTac — Design-System
-   Dunkles, taktisches Theme · reines CSS, keine Abhängigkeiten
+   Dunkles Olive-Ops-Theme · reines CSS, keine Abhängigkeiten
    ========================================================================== */
 
 :root {
@@ -76,24 +76,65 @@ p { margin: 0 0 1em; }
   gap: 16px;
 }
 @font-face {
-  /* Black Ops One (SIL OFL 1.1) — selbst gehostet, kein Google-Fonts-Abruf */
-  font-family: "Black Ops One";
-  src: url("assets/BlackOpsOne-subset.woff2") format("woff2"),
-       url("assets/BlackOpsOne-subset.ttf") format("truetype");
+  /* Michroma (SIL OFL 1.1) — Schriftzug des Logos, selbst gehostet */
+  font-family: "Michroma";
+  src: url("assets/Michroma-Regular.ttf") format("truetype");
   font-display: swap;
 }
+/* Logo: MILTAC in Eck-Klammern, darunter FITNESS zwischen Linien —
+   derselbe Schriftzug wie in der App-Kopfzeile. */
 .logo {
+  position: relative;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
+  padding: 9px 18px 8px;
   color: #E7ECDF;
   text-decoration: none;
-  font: 400 1.35rem/1 "Black Ops One", Impact, "Arial Black", sans-serif;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  line-height: 1;
 }
-.logo:hover { color: #fff; }
-.logo .mark { width: 42px; height: auto; flex: none; }
+.logo::before,
+.logo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(#8E8A80, #8E8A80) left top / 14px 2px,
+    linear-gradient(#8E8A80, #8E8A80) left top / 2px 10px,
+    linear-gradient(#8E8A80, #8E8A80) right top / 14px 2px,
+    linear-gradient(#8E8A80, #8E8A80) right top / 2px 10px,
+    linear-gradient(#8E8A80, #8E8A80) left bottom / 14px 2px,
+    linear-gradient(#8E8A80, #8E8A80) left bottom / 2px 10px,
+    linear-gradient(#8E8A80, #8E8A80) right bottom / 14px 2px,
+    linear-gradient(#8E8A80, #8E8A80) right bottom / 2px 10px;
+  background-repeat: no-repeat;
+}
+.logo::after { display: none; }
+.logo .name {
+  font: 400 1.05rem/1 "Michroma", "Segoe UI", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  padding-left: 0.1em;
+  color: #D8D4CA;
+}
+.logo .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 700 0.5rem/1 var(--font);
+  letter-spacing: 0.5em;
+  padding-left: 0.5em;
+  color: #D4A24C;
+}
+.logo .tag::before,
+.logo .tag::after {
+  content: "";
+  width: 12px;
+  height: 1px;
+  background: var(--accent);
+}
+.logo:hover .name { color: #fff; }
 .site-nav { display: flex; gap: 22px; align-items: center; }
 .site-nav a {
   color: var(--muted);
@@ -226,6 +267,15 @@ p { margin: 0 0 1em; }
    -------------------------------------------------------------------------- */
 .phone-wrap { display: grid; place-items: center; }
 .phone-img { width: min(100%, 420px); height: auto; filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6)); }
+.hero-shot { width: min(100%, 330px); }
+.designs {
+  margin: 56px 0 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+.designs img { width: 100%; height: auto; display: block; }
 .phone {
   width: 280px;
   aspect-ratio: 9 / 19;
@@ -408,6 +458,7 @@ p { margin: 0 0 1em; }
   .hero { padding-top: 64px; }
   .phone { width: 250px; }
   .phone-img { width: min(100%, 320px); }
+  .hero-shot { width: min(100%, 260px); }
   .screens {
     display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
     padding: 8px 4px 20px; margin-top: 32px; max-width: none;
