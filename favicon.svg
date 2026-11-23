@@ -1,8 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0F1210"/>
-  <g transform="translate(9 14) scale(0.324)">
-    <polygon points="0,0 142,0 142,22 15,22" fill="#8E9F70"/>
-    <polygon points="28,34 142,34 142,56 43,56" fill="#99A97F"/>
-    <polygon points="57,68 142,68 142,88 72,88" fill="#A3B18A"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <radialGradient id="t" cx="0.5" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#232B1E"/>
+      <stop offset="1" stop-color="#0A0D09"/>
+    </radialGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A3B18A"/>
+      <stop offset="1" stop-color="#D4A24C"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="21" fill="url(#t)"/>
+  <path d="M12 30V12h18M84 30V12H66M12 66v18h18M84 66v18H66" fill="none" stroke="#B8B4A8" stroke-width="4"/>
+  <polygon points="20,30.5 76,30.5 76,39.08 26.44,39.08" fill="url(#w)"/>
+  <polygon points="31.2,43.63 76,43.63 76,52.2 37.64,52.2" fill="url(#w)"/>
+  <polygon points="42.4,56.75 76,56.75 76,65.33 48.84,65.33" fill="url(#w)"/>
 </svg>
